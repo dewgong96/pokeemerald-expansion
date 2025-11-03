@@ -1,0 +1,11 @@
+oct 31 2025
+- made umbreon and espeon starter choices
+
+nov 1 2025
+- made global shiny odds 1/420
+- changed birch -> beauty
+
+nov 2 2025
+- follower pkmn enabled
+- more work on birch intro
+- message box
