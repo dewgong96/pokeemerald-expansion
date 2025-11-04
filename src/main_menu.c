@@ -1389,7 +1389,7 @@ static void Task_NewGameBirchSpeechSub_InitPokeBall(u8 taskId)
 {
     u8 spriteId = gTasks[sBirchSpeechMainTaskId].tLotadSpriteId;
 
-    gSprites[spriteId].x = 100;
+    gSprites[spriteId].x = 110;
     gSprites[spriteId].y = 75;
     gSprites[spriteId].invisible = FALSE;
     gSprites[spriteId].data[0] = 0;
@@ -1915,6 +1915,7 @@ static void AddBirchSpeechObjects(u8 taskId)
     gSprites[lotadSpriteId].callback = SpriteCB_Null;
     gSprites[lotadSpriteId].oam.priority = 0;
     gSprites[lotadSpriteId].invisible = TRUE;
+    gSprites[lotadSpriteId].oam.matrixNum = ST_OAM_HFLIP;
     gTasks[taskId].tLotadSpriteId = lotadSpriteId;
     brendanSpriteId = CreateTrainerSprite(FacilityClassToPicIndex(FACILITY_CLASS_BRENDAN), 120, 60, 0, NULL);
     gSprites[brendanSpriteId].callback = SpriteCB_Null;
